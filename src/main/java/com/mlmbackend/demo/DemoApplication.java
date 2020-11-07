@@ -31,6 +31,14 @@ public class DemoApplication  implements CommandLineRunner {
         categoryRepository.save(new Category(1L,"computers",null,"good Product", null));
         categoryRepository.save(new Category(2L,"Tablets",null,"good Product",null));
         categoryRepository.save(new Category(3L,"Smart phones",null,"good Product",null));
+        categoryRepository.save(new Category(4L,"Accessoires",null,"good Product",null));
+        categoryRepository.save(new Category(5L,"Cartables",null,"good Product",null));
+        categoryRepository.save(new Category(6L,"T-shirts",null,"good Product",null));
+        categoryRepository.save(new Category(7L,"Chaussures",null,"good Product",null));
+        categoryRepository.save(new Category(8L,"Chemises",null,"good Product",null));
+        categoryRepository.save(new Category(9L,"Parfum",null,"good Product",null));
+        categoryRepository.save(new Category(10L,"Produits cosmetique",null,"good Product",null));
+        categoryRepository.save(new Category(11L,"Enfants",null,"good Product",null));
         System.out.println("Application working succesfully");
         Random rnd=new Random();
         categoryRepository.findAll().forEach(c->{

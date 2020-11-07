@@ -71,6 +71,103 @@ public class DemoApplication  implements CommandLineRunner {
                    p.setPhotoName("smart.png");
                    productRepository.save(p);
                }
+               else if (c.getId()==4){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("Accessoire " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("Acces.png");
+                   productRepository.save(p);
+               }
+               else if (c.getId()==5){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("Cartable " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("Cartable.png");
+                   productRepository.save(p);
+               }
+               else if (c.getId()==6){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("T-shirt " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("shirt.png");
+                   productRepository.save(p);
+               }
+               else if (c.getId()==7){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("Chaussure " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("Chaus.png");
+                   productRepository.save(p);
+               }
+               else if (c.getId()==8){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("Chemise " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("Chemise.png");
+                   productRepository.save(p);
+               }
+               else if (c.getId()==9){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("Parfum " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("Parfum.png");
+                   productRepository.save(p);
+               }
+               else if (c.getId()==10){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("cosmetique " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("cosme.png");
+                   productRepository.save(p);
+               }
+               else if (c.getId()==11){
+                   Product p = new Product();
+//                RandomString.make(3)
+                   p.setName("Enfant " + i);
+                   p.setCurrentPrice(100 + rnd.nextInt(10000));
+                   p.setAvailable(rnd.nextBoolean());
+                   p.setPromotion(rnd.nextBoolean());
+                   p.setSelected(rnd.nextBoolean());
+                   p.setCategory(c);
+                   p.setPhotoName("Enfant.png");
+                   productRepository.save(p);
+               }
+
             }
         });
 

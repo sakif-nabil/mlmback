@@ -23,7 +23,8 @@ public class CatalogueRestController {
 @GetMapping(path="/photoProduct/{id}",produces = MediaType.IMAGE_PNG_VALUE)
     public byte[] getPhoto(@PathVariable("id") Long id) throws Exception {
         Product p= productRepository.findById(id).get();
-        return Files.readAllBytes(Paths.get(System.getProperty("user.home")+"/ecom/"+p.getPhotoName()));
+    //return Files.readAllBytes(Paths.get(System.getProperty("user.home")+"/ecom/"+p.getPhotoName()));
+    return Files.readAllBytes(Paths.get(System.getProperty("user.home")+p.getPhotoName()));
     }
 
 
@@ -31,7 +32,8 @@ public class CatalogueRestController {
     public void uplaodPhoto(MultipartFile file, @PathVariable Long id) throws Exception{
         Product p=productRepository.findById(id).get();
         p.setPhotoName(file.getOriginalFilename());
-        Files.write(Paths.get(System.getProperty("user.home")+"/ecom/"+p.getPhotoName()),file.getBytes());
+     //Files.write(Paths.get(System.getProperty("user.home")+"/ecom/"+p.getPhotoName()),file.getBytes());
+     Files.write(Paths.get(System.getProperty("user.home")+p.getPhotoName()),file.getBytes());
         productRepository.save(p);
 
  }
